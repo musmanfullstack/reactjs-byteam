@@ -1,0 +1,23 @@
+---Components
+"Components are the building blocks that comprise a React application representing a part of the user interface.Here are some of the features of Components.
+Re-usability: A component used in one area of the application can be reused in another area. This helps speed up the development process.
+Nested Components: A component can contain several other components.
+Render method: In its minimal form, a component must define a render method that specifies how the component renders to the DOM.
+Passing properties: A component can also receive props. These are properties passed by its parent to specify values."
+---Types
+"class component (for old version)
+function component (for latest version)"
+---Creating a function component
+"React components can also be created using plain JavaScript functions but with limited features. Function based React components support state management and other advanced features. It can be used to quickly create a simple component.
+The above Expense can be rewritten in function as specified below."
+---Example
+"function Expense() {
+   return (
+      <div>
+         <div><b>Item:</b> <em>Mango Juice</em></div>
+         <div><b>Amount:</b> <em>30.00</em></div>
+         <div><b>Spend Date:</b> <em>2020-10-10</em></div>
+         <div><b>Category:</b> <em>Food</em></div>
+      </div>
+   );
+}"

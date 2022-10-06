@@ -1,0 +1,36 @@
+---The setState() Method
+
+"State can be updated in response to event handlers, server responses, or prop changes. This is done using the setState() method. 
+The setState() method enqueues all of the updates made to the component state and instructs React to re-render the component and its children with the updated state.
+Always use the setState() method to change the state object, since it will ensure that the component knows it’s been updated and calls the render() method."
+ 
+---Example
+
+"class Bike extends React.Component {
+  constructor(props) {
+    super(props);
+     this.state = {
+      make: "Yamaha",
+      model: "R15",
+      color: "blue"
+    };
+  }
+  changeBikeColor = () => {
+    this.setState({color: "black"});
+  }
+  render() {
+    return (
+      <div>
+        <h2>My {this.state.make}</h2>
+        <p>
+          It is a {this.state.color}
+          {this.state.model}.
+        </p>
+        <button
+          type="button"
+          onClick={this.changeBikeColor}
+        >Change color</button>
+      </div>
+    );
+  }
+}"

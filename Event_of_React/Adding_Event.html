@@ -1,0 +1,28 @@
+---Adding Events
+
+"React events are written in camelCase syntax:
+onClick instead of onclick.
+React event handlers are written inside curly braces:
+onClick={shoot}  instead of onClick="shoot()"."
+
+---React
+"<button onClick={shoot}>Take the Shot!</button>
+<button onclick="shoot()">Take the Shot!</button>"
+
+---HTML
+"<button onclick="shoot()">Take the Shot!</button>"
+
+---Example
+
+"import React from 'react';
+import ReactDOM from 'react-dom/client';
+function Football() {
+  const shoot = () => {
+    alert("Great Shot!");
+  }
+  return (
+    <button onClick={shoot}>Take the shot!</button>
+  );
+}
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(<Football />);"

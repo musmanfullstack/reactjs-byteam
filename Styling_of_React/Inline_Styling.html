@@ -1,0 +1,36 @@
+---Inline Styling
+"Inline Styling is one of the safest ways to style the React component. It declares all the styles as JavaScript objects using DOM based css properties and set it to the component through style attributes."
+---Example
+"Let us style our Expense component."
+---Styling
+"itemStyle = {
+   color: 'brown', 
+   fontSize: '14px' 
+}"
+ 
+---Code
+"render() {
+   return (
+      <div style={ this.itemStyle }>
+         <div><b>Item:</b> <em>Mango Juice</em></div>
+         <div><b>Amount:</b> <em>30.00</em></div>
+         <div><b>Spend Date:</b> <em>2020-10-10</em></div>
+         <div><b>Category:</b> <em>Food</em></div>
+      </div>
+   );
+}
+Also, style can be directly set inside the component.
+render() {
+   return (
+      <div style={
+         {
+            color: 'brown',
+            fontSize: '14px'
+         }         
+      }>
+         <div><b>Item:</b> <em>Mango Juice</em></div>
+         <div><b>Amount:</b> <em>30.00</em></div>
+         <div><b>Spend Date:</b> <em>2020-10-10</em></div>
+         <div><b>Category:</b> <em>Food</em></div>
+      </div>
+   );}"

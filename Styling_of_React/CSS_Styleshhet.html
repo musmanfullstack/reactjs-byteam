@@ -1,0 +1,25 @@
+---CSS Stylesheet
+"CSS stylesheet is a common, common and time-tested methodology. Simply create a CSS stylesheet for a component and enter all your styles for that particular component. Then, in the component, use className to refer to the styles."
+---Example
+"Let us style our Expense component."
+---Styling
+"div.itemStyle { 
+   color: brown; 
+   font-size: 14px; 
+}"
+---Code
+"import React from 'react';
+import './Expense.css';
+class Expense extends React.Component {
+   render() {
+      return (
+         <div className="itemStyle">
+            <div><b>Item:</b> <em>Mango Juice</em></div>
+            <div><b>Amount:</b> <em>30.00</em></div>
+            <div><b>Spend Date:</b> <em>2020-10-10</em></div>
+            <div><b>Category:</b> <em>Food</em></div>
+         </div>
+      );
+   }
+}
+export default Expense;"

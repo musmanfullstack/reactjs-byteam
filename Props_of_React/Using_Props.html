@@ -1,0 +1,38 @@
+---Using Props in React
+"We follow three steps to implement props in a React application fully. These are,"
+
+1-Define an attribute and its value
+2-Pass it to child component or components by using props
+3-Render the props data
+
+---Defining Attribute and Data
+"We can assign data to React components while calling them in this way.
+<Child attr1={value} attr2={value}/>
+In our case, we will name the attribute as text and assign the string to it.
+<Child text={“I’m the 1st child”} />"
+
+---Passing Data using Props
+"Now let's take the "Child 1" string and pass it by using props. Passing props is simple, and we can add props like we pass an argument to a function.
+const Child = (props) => {  
+return <p>Child 1</p>; 
+};"
+
+---Rendering Props Data
+"Now we need to render props since we have already passed it to the child component as an argument.
+const Child = (props) => {  
+  return <p>{props.text}</p>; 
+};
+class Parent extends Component {  
+  render() {
+    return (
+      <h1>
+        the parent component.
+        <Child text={"Child 1"} />
+        <Child text={"Child 2"} />
+        <Child text={"Child 3"} />
+      </h1>
+    );
+  }
+}"
+ 
+ 

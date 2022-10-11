@@ -1,0 +1,6 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/unialso1/public_html/
+    - /bin/cp * $DEPLOYPATH
+    
